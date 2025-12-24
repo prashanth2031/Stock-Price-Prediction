@@ -15,3 +15,5 @@ plt.plot(df['Close'])
 plt.xlabel('Date',fontsize=18)
 plt.ylabel('Close Price USD ($)',fontsize=18)
 plt.show()
+data=df.filter(['Close'])
+dataset=data.values

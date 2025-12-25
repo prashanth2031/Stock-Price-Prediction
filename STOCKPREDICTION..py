@@ -17,3 +17,5 @@ plt.ylabel('Close Price USD ($)',fontsize=18)
 plt.show()
 data=df.filter(['Close'])
 dataset=data.values
+training_data_len=math.ceil(len(dataset) * .8)
+training_data_len

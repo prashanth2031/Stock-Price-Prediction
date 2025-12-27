@@ -22,3 +22,6 @@ training_data_len
 scaler=MinMaxScaler(feature_range=(0,1))
 scaled_data=scaler.fit_transform(dataset)
 scaled_data
+train_data=scaled_data[0:training_data_len , :]
+x_train=[]
+y_train=[]

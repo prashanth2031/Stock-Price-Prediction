@@ -25,3 +25,6 @@ scaled_data
 train_data=scaled_data[0:training_data_len , :]
 x_train=[]
 y_train=[]
+for i in range(60,len(train_data)):
+x_train.append(train_data[i-60:i,0])
+y_train.append(train_data[i,0])

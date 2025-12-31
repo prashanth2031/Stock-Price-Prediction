@@ -31,3 +31,4 @@ if i<=61:
 print(x_train)
 print(y_train)
 print()
+x_train , y_train = np.array(x_train), np.array(y_train)

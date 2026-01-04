@@ -41,3 +41,6 @@ model.add(Dense(25))
 model.add(Dense(1))
 model.compile(optimizer='adam' , loss='mean_squared_error')
 model.fit(x_train,y_train , batch_size=1, epochs=1)
+test_data = scaled_data[training_data_len - 60:, :]
+x_test = []
+y_test = dataset[training_data_len:, :]

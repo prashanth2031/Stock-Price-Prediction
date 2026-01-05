@@ -44,3 +44,5 @@ model.fit(x_train,y_train , batch_size=1, epochs=1)
 test_data = scaled_data[training_data_len - 60:, :]
 x_test = []
 y_test = dataset[training_data_len:, :]
+for i in range(60, len(test_data)):
+x_test.append(test_data[i-60:i, 0])

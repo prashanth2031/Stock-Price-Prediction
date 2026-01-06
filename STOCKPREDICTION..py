@@ -45,4 +45,6 @@ test_data = scaled_data[training_data_len - 60:, :]
 x_test = []
 y_test = dataset[training_data_len:, :]
 for i in range(60, len(test_data)):
-x_test.append(test_data[i-60:i, 0])
+x_test.append(test_data[i-60:i, 0]
+x_test = np.array(x_test)
+x_test = np.reshape(x_test, (x_test.shape[0] , x_test.shape[1],1))

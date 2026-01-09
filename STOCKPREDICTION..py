@@ -52,3 +52,4 @@ predictions = model.predict(x_test)
 predictions=scaler.inverse_transform(predictions)
 rmse = np.sqrt(np.mean(predictions - y_test)**2)
 rmse
+train = data[:training_data_len]

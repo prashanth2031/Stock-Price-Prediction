@@ -55,3 +55,4 @@ rmse
 train = data[:training_data_len]
 valid = data[training_data_len:]
 valid['Predictions'] = predictions
+plt.figure(figsize=(16,8))

@@ -58,3 +58,4 @@ valid['Predictions'] = predictions
 plt.figure(figsize=(16,8))
 plt.title('Model')
 plt.xlabel('Date', fontsize=18)
+plt.ylabel('Close Price USD ($)',fontsize=18)

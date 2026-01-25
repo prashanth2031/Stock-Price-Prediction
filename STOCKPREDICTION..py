@@ -68,3 +68,4 @@ apple_quote = yf.download('AAPL', start='2012-01-01', end='2019-12-17')
 print(apple_quote.columns)
 new_df = apple_quote['Close']
 last_60_days = new_df[-60:].values
+last_60_days_scaled = scaler.transform(last_60_days)

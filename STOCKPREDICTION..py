@@ -69,3 +69,4 @@ print(apple_quote.columns)
 new_df = apple_quote['Close']
 last_60_days = new_df[-60:].values
 last_60_days_scaled = scaler.transform(last_60_days)
+X_test = []

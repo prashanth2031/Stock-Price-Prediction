@@ -71,3 +71,4 @@ last_60_days = new_df[-60:].values
 last_60_days_scaled = scaler.transform(last_60_days)
 X_test = []
 X_test.append(last_60_days_scaled)
+X_test = np.array(X_test)

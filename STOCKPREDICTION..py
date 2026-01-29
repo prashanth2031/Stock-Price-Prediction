@@ -72,3 +72,4 @@ last_60_days_scaled = scaler.transform(last_60_days)
 X_test = []
 X_test.append(last_60_days_scaled)
 X_test = np.array(X_test)
+X_test = np.reshape(X_test, (X_test.shape[0] , X_test.shape[1],1))

@@ -78,3 +78,4 @@ pred_price = scaler.inverse_transform(pred_price)
 print(pred_price)
 apple_quote2 = yf.download('AAPL', start='2012-12-18', end='2019-12-18')
 print(apple_quote2['Close'])
+#nggjmxh official
